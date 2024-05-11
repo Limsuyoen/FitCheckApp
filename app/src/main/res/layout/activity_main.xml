@@ -1,20 +1,72 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Hello World!"
-        android:textColor="@color/black"
-        android:background="@color/blue"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <!--
+    TODO: 1. 에뮬레이터 커스텀으로 만들으세요!!(비율|780*1704)
+    TODO: 2. 색상 참조 : colors.xml 이용하기 (추가하는 색 카톡이나 디코에 알리기)
+     포인트 색 @color/pink @color/textblack 이용
+    TODO: 3. view 크기는 FIGMA UI 참고 (권한 열리면 복사 가능)
+    TODO: 4. xml 파일 명명 규칙(snake_case표기법 사용, 각 단어사이 언더바 구분) | <WHAT>_<WHERE>_<DESCRIPTION>_<SIZE>
+    <WHAT>: activity, fragment, view, item, layout
+    <WHERE>: main, user, settings (우리로 치면 여기가 기능화면 ex| 출석, 예약, 로그인, 마이페이지 등)
+    <DESCRIPTION>: title, content, profile(ex_커스텀 도형으로 모서라가 둥근 사격형을 만들고 싶을 때 만드는 xml background속성에 부여해주는 것)
+    <SIZE>: 24dp, small(거의 안쓸듯)
+    -->
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+
+        android:layout_width="89dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="47dp"
+        android:background="@color/pink" />
+
+    <CalendarView
+        android:layout_width="350dp"
+        android:layout_height="307dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="47dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0000-00-00"
+            android:textColor="@color/textblack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="운동일지"
+            android:textColor="@color/textblack" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="132dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:hint="여기에 작성해주세요" />
+
+    <com.google.android.material.navigationrail.NavigationRailView
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="end"
+        android:layout_marginBottom="34dp" />
+
+
+</LinearLayout>
