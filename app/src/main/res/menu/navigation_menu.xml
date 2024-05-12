@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:icon="@drawable/attend_pressed"
+        android:title="@string/navi_attend"
+        android:enabled="true"/>
+    <item
+        android:icon="@drawable/reservation_disable"
+        android:title="@string/navi_reserve"
+        android:enabled="true"/>
+    <item
+        android:icon="@drawable/mypage_disable"
+        android:title="@string/navi_myPage"
+        android:enabled="true"/>
+
+</menu>

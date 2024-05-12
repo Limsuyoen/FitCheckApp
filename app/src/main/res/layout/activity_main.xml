@@ -2,71 +2,114 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="390dp"
+    android:layout_height="852dp"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
     <!--
     TODO: 1. 에뮬레이터 커스텀으로 만들으세요!!(비율|780*1704)
     TODO: 2. 색상 참조 : colors.xml 이용하기 (추가하는 색 카톡이나 디코에 알리기)
-     포인트 색 @color/pink @color/textblack 이용
+             포인트 색 @color/pink @color/textblack 이용
     TODO: 3. view 크기는 FIGMA UI 참고 (권한 열리면 복사 가능)
     TODO: 4. xml 파일 명명 규칙(snake_case표기법 사용, 각 단어사이 언더바 구분) | <WHAT>_<WHERE>_<DESCRIPTION>_<SIZE>
-    <WHAT>: activity, fragment, view, item, layout
-    <WHERE>: main, user, settings (우리로 치면 여기가 기능화면 ex| 출석, 예약, 로그인, 마이페이지 등)
-    <DESCRIPTION>: title, content, profile(ex_커스텀 도형으로 모서라가 둥근 사격형을 만들고 싶을 때 만드는 xml background속성에 부여해주는 것)
-    <SIZE>: 24dp, small(거의 안쓸듯)
+        <WHAT>: activity, fragment, view, item, layout
+        <WHERE>: main, user, settings (우리로 치면 여기가 기능화면 ex| 출석, 예약, 로그인, 마이페이지 등)
+        <DESCRIPTION>: title, content, profile(ex_커스텀 도형으로 모서라가 둥근 사격형을 만들고 싶을 때 만드는 xml background속성에 부여해주는 것)
+        <SIZE>: 24dp, small(거의 안쓸듯)
+    TODO: 5 commit 메세지 구조: (디코참고)
+            type: feat(기능추가), fix(버그수정), doc(문서수정) & 간결하게 내용 작성-> "feat : "회원가입 기능 구현" "
+            body: 무엇을 왜 변경했는지 자세히 작성
+            footer: 이슈ID-> 디버깅 시 // 우린 비고란 정도록 생각하고 씁시다. fixs(아직 고치는중)
+    TODO: 6 이미지 참조시 이름 확인하기
+            활성: _pressed
+            비활성: disable
+            로고크기-> logo1x(기본), logo3x(3배)
+
     -->
 
-    <ImageView
 
+    <ImageView
         android:layout_width="89dp"
         android:layout_height="37dp"
         android:layout_gravity="center"
-        android:layout_marginTop="47dp"
-        android:background="@color/pink" />
+        android:layout_marginTop="58dp"
+        android:src="@drawable/logo_1x" />
 
     <CalendarView
         android:layout_width="350dp"
         android:layout_height="307dp"
         android:layout_gravity="center"
-        android:layout_marginTop="47dp" />
+        android:layout_marginTop="40dp"
+        android:background="@drawable/calendar_rectangle"
+        android:elevation="10dp"
+        android:layout_marginBottom="21dp"/>
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_marginBottom="8dp"
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:textAlignment="center">
 
         <TextView
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
             android:text="0000-00-00"
-            android:textColor="@color/textblack" />
+            android:textColor="@color/Gray900"
+            android:textSize="16sp" />
 
         <TextView
+
+            android:layout_gravity="center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="125dp"
             android:text="운동일지"
-            android:textColor="@color/textblack" />
+            android:textColor="@color/Gray900"
+            android:textSize="16sp" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="76dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/star_disable" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/star_disable" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star_disable" />
+        </LinearLayout>
+
     </LinearLayout>
 
     <EditText
         android:layout_width="350dp"
         android:layout_height="132dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="50dp"
+        android:layout_marginBottom="120dp"
         android:hint="여기에 작성해주세요" />
 
-    <com.google.android.material.navigationrail.NavigationRailView
+    <com.google.android.material.bottomnavigation.BottomNavigationView
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:layout_gravity="end"
-        android:layout_marginBottom="34dp" />
-
+        android:layout_gravity="center"
+        android:layout_marginBottom="34dp"
+        app:menu="@menu/navigation_menu" />
 
 </LinearLayout>

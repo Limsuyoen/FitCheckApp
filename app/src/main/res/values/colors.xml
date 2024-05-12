@@ -2,6 +2,16 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="pink">#FF7EBC</color>
-    <color name="textblack">#292C35</color>
+    <color name="Main_M1">#FF7EBC</color>
+    <color name="Main_M2">#F8C7DF</color>
+    <color name="red">#FF4C4C</color>
+    <color name="green">#79E966</color>
+    <color name="yellow">#FFF500</color>
+    <color name="Gray900">#21242C</color>
+    <color name="Gray850">#292C35</color>
+    <color name="Gray600">#FFFFFF</color>
+    <color name="Gray500">#9497A0</color>
+    <color name="Gray400">#BBBCC2</color>
+    <color name="Gray300">#DDDEE3</color>
+    <color name="Gray50">#FAFAFB</color>
 </resources>
