@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="89dp"
+        android:layout_height="37dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="58dp"
+        android:src="@mipmap/logo_1x" />
+
+    <CalendarView
+        android:layout_width="350dp"
+        android:layout_height="307dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="21dp"
+        android:background="@drawable/calendar_rectangle"
+        android:elevation="10dp" />
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal"
+        android:textAlignment="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:text="0000-00-00"
+            android:textColor="@color/Gray900"
+            android:textSize="16sp" />
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="125dp"
+            android:text="운동일지"
+            android:textColor="@color/Gray900"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="76dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/star_pressed" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/star_disable" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/star_disable" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="132dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="110dp"
+        android:hint="@string/text_here" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="34dp"
+        app:menu="@menu/navigation_menu_member"
+        android:id="@+id/nav_view_member"/>
+
+</LinearLayout>
