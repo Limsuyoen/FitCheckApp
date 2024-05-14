@@ -2,11 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:icon="@drawable/attend_pressed"
+        android:icon="@drawable/class_pressed"
         android:title="@string/navi_class"
         android:enabled="true"/>
     <item
-        android:icon="@drawable/reservation_disable"
+        android:icon="@drawable/manage_disable"
         android:title="@string/navi_manage"
         android:enabled="true"/>
     <item

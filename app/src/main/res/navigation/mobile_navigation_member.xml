@@ -1,6 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/mobile_navigation">
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_attend">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="mobile.mjc.partynership.ui.home.HomeFragment"
+        android:label="@string/navi_attend"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_dashboard"
+        android:name="mobile.mjc.partynership.ui.dashboard.DashboardFragment"
+        android:label="@string/navi_reserve"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/navigation_notifications"
+        android:name="mobile.mjc.FitCheckApp.ui.mypage."
+        android:label="@string/navi_myPage"
+        tools:layout="@layout/fragment_notifications" />
 
 </navigation>
