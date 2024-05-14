@@ -28,13 +28,12 @@
 
     -->
 
-
     <ImageView
         android:layout_width="89dp"
         android:layout_height="37dp"
         android:layout_gravity="center"
         android:layout_marginTop="58dp"
-        android:src="@drawable/logo_1x" />
+        android:src="@mipmap/logo_1x" />
 
     <CalendarView
         android:layout_width="350dp"
